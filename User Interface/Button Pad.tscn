@@ -9,8 +9,8 @@
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_top = -160.0
-margin_right = -696.0
+margin_top = -256.0
+margin_right = -632.0
 __meta__ = {
 "_edit_group_": true,
 "_edit_use_anchors_": false
@@ -18,17 +18,17 @@ __meta__ = {
 
 [node name="ButtonRight" type="TouchScreenButton" parent="VBoxContainer"]
 self_modulate = Color( 1, 1, 1, 0.588235 )
-position = Vector2( 255, 59 )
-scale = Vector2( 2.28571, 2 )
+position = Vector2( 319.016, 59.0003 )
+scale = Vector2( 4.329, 3.386 )
 normal = ExtResource( 2 )
 pressed = ExtResource( 1 )
 action = "Move Right"
 
 [node name="ButtonLeft" type="TouchScreenButton" parent="VBoxContainer"]
 self_modulate = Color( 1, 1, 1, 0.588235 )
-position = Vector2( 191, 123 )
+position = Vector2( 255.016, 167.362 )
 rotation = -3.14159
-scale = Vector2( 2.28571, 2 )
+scale = Vector2( 4.32897, 3.38632 )
 normal = ExtResource( 2 )
 pressed = ExtResource( 1 )
 action = "Move Left"
@@ -38,17 +38,17 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -160.0
-margin_top = -160.0
+margin_left = -224.0
+margin_top = -256.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="ButtonUp" type="TouchScreenButton" parent="HBoxContainer"]
 self_modulate = Color( 1, 1, 1, 0.588235 )
-position = Vector2( 7, 123 )
+position = Vector2( 7, 188 )
 rotation = -1.5708
-scale = Vector2( 2.28571, 2 )
+scale = Vector2( 4.329, 3.386 )
 normal = ExtResource( 2 )
 pressed = ExtResource( 1 )
 action = "Jump"
