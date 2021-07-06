@@ -4,6 +4,7 @@ onready var scene_tree = get_tree()
 onready var scoreText = $Label
 onready var pauseMenu = $ColorRect
 onready var tittle = $ColorRect/Tittle
+onready var bgSound = $"BG Sound"
 
 var paused = false setget set_pause
 var die = "You Die"
@@ -29,6 +30,7 @@ func set_pause(value):
 	paused = value
 	pauseMenu.visible = value
 	scene_tree.paused = value
+	bgSound.playing = value
 	
 func _on_SceneChangeButton_button_up():
 	self.paused = false

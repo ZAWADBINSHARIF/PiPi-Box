@@ -30,6 +30,7 @@ func calculate_move__velocity(
 	
 	if direction.y == -1.0:
 		out.y = speed.y * direction.y
+		$Jump.play()
 	if is_jump_interrupted:
 		out.y = 0.0
 	return out
@@ -47,5 +48,8 @@ func kill_and_jump(liner__velocity: Vector2, push: float):
 
 func _on_PlayerHurtArea_body_entered(_body):
 	var one = 1
+	$Dead_sound.play()
+	$CollisionShape2D.set_deferred("disable", true)
+	yield(get_node("Dead_sound"),"finished")
 	PlayerData.dead += one
 	queue_free()

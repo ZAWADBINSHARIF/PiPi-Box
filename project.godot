@@ -22,7 +22,7 @@ _global_script_class_icons={
 
 config/name="PiPi Box"
 run/main_scene="res://Screens/MainScreen.tscn"
-config/icon="res://start-assets/player.png"
+config/icon="res://start-assets/icon.png"
 config/windows_native_icon="res://start-assets/player.ico"
 
 [autoload]

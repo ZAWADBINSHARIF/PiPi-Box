@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/LevelBgMusic.wav-35758c30f31b24eec3de3e2d57c93a69.sample"
+
+[deps]
+
+source_file="res://Audio/LevelBgMusic.wav"
+dest_files=[ "res://.import/LevelBgMusic.wav-35758c30f31b24eec3de3e2d57c93a69.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0

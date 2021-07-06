@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Coin/Coin.gd" type="Script" id=1]
 [ext_resource path="res://start-assets/coin.png" type="Texture" id=2]
+[ext_resource path="res://Audio/CoinCollect.wav" type="AudioStream" id=3]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 34.0147
@@ -34,6 +35,18 @@ tracks/1/keys = {
 "args": [  ],
 "method": "queue_free"
 } ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.1 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
 }
 
 [sub_resource type="Animation" id=3]
@@ -68,5 +81,9 @@ shape = SubResource( 1 )
 autoplay = "Idle"
 anims/Collected = SubResource( 2 )
 anims/Idle = SubResource( 3 )
+
+[node name="coinCollect" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = -12.0
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Player/Enemy.tscn" type="PackedScene" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://Levels/Level_02.tscn" type="PackedScene" id=7]
 [ext_resource path="res://User Interface/UserInterFace.tscn" type="PackedScene" id=8]
 [ext_resource path="res://User Interface/Button Pad.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Audio/LevelBgMusic.tscn" type="PackedScene" id=10]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 80, 0, 80, 80, 0, 80 )
@@ -85,19 +86,19 @@ limit_bottom = 800
 [node name="Enemies" type="Node" parent="."]
 
 [node name="Enemy" parent="Enemies" instance=ExtResource( 2 )]
-position = Vector2( 873.376, 629.847 )
+position = Vector2( 477, 631 )
 
 [node name="Enemy2" parent="Enemies" instance=ExtResource( 2 )]
-position = Vector2( 1472.06, 622.72 )
+position = Vector2( 1266, 631 )
 
 [node name="Enemy3" parent="Enemies" instance=ExtResource( 2 )]
-position = Vector2( 2316.63, 629.847 )
+position = Vector2( 2094, 631 )
 
 [node name="Enemy4" parent="Enemies" instance=ExtResource( 2 )]
 position = Vector2( 3043.61, 220.034 )
 
 [node name="Enemy5" parent="Enemies" instance=ExtResource( 2 )]
-position = Vector2( 3456.56, 618.842 )
+position = Vector2( 3244, 631 )
 
 [node name="Coins" type="Node" parent="."]
 
@@ -130,5 +131,7 @@ position = Vector2( 4080, 258 )
 
 [node name="Coin8" parent="Coins" instance=ExtResource( 3 )]
 position = Vector2( 4240, 258 )
+
+[node name="LevelBgMusic" parent="." instance=ExtResource( 10 )]
 
 [editable path="Player"]
