@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://start-assets/tileset.png" type="Texture" id=2]
@@ -7,7 +7,6 @@
 [ext_resource path="res://Player/Enemy.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Object/Transport Area.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Levels/Level_03.tscn" type="PackedScene" id=7]
-[ext_resource path="res://User Interface/Button Pad.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Audio/LevelBgMusic.tscn" type="PackedScene" id=9]
 [ext_resource path="res://User Interface/UserInterFace.tscn" type="PackedScene" id=10]
 
@@ -47,10 +46,6 @@ __meta__ = {
 layer = 100
 
 [node name="UserInterFace" parent="UserInterFace" instance=ExtResource( 10 )]
-
-[node name="Arro Button" type="CanvasLayer" parent="."]
-
-[node name="Button Pad" parent="Arro Button" instance=ExtResource( 8 )]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = -100
